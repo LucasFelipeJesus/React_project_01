@@ -1,6 +1,6 @@
 import { Box, Center, Container, Heading, Stack,Text } from "@chakra-ui/react";
 import Layout from "../../components/layout/layout";
-import FormFatec from "../../components/formCadastro";
+import FormFatec from "../../components/formSignIn";
 
 
 function Contato() {

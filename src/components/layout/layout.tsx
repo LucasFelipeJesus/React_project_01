@@ -1,7 +1,7 @@
 import {  Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 import Topo from "../topApp";
-import Rodape from "../rodape";
+import Rodape from "../footerApp";
 
 
 interface LayoutProps {

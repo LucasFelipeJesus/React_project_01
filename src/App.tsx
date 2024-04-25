@@ -1,6 +1,6 @@
 
 import './App.css'
-import FormFatec from './components/formCadastro'
+import FormFatec from './components/formSignIn'
 
 
 

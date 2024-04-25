@@ -1,5 +1,5 @@
 import { Box, Stack } from "@chakra-ui/react"
-import InputFatec from "../inputFatec"
+import InputFatec from "../input"
 import ButtonForms1 from "../button"
 
 

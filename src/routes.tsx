@@ -1,9 +1,9 @@
 import {  createBrowserRouter } from 'react-router-dom'
-import Sobre from './pages/sobre'
+import Sobre from './pages/about'
 import Home from './pages/home'
 import NotFound from './pages/404'
 
-import FormFatecPage from './pages/Form'
+import FormFatecPage from './pages/signIn'
 import TarefasFatec from './pages/Tasks'
 
 const router = createBrowserRouter([
