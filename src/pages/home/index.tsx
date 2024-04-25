@@ -1,24 +1,20 @@
-import { Link } from "react-router-dom";
+import { Stack, Container, Heading, Box, Text } from "@chakra-ui/react";
+import Layout from "../../components/layout/layout";
 
 
 function Home() {
-  return (
-    <div>
-      <h1>Pagina Inicial</h1>
-      <hr />
-      <p>Seja bem-vindo à página Inicial!</p> 
-      <p>É com grande entusiasmo que apresentamos o projeto de desenvolvimento de um software inovador: o Check List Guiado para a Fatec. 
-        <br />
-        Este projeto é uma iniciativa que visa otimizar e simplificar os processos de verificação e controle dentro da instituição, oferecendo uma solução digital robusta e intuitiva.</p>      
-      <h1>Menu disponível:</h1>
-      <hr />
-      <Link to="/FormFatec">Ir para a página de preenchimento de formulário</Link>
-      <br />
-      <Link to="/tarefas">Ir para a página de Tarefas</Link>
-      <br />
-      <Link to="/sobre">Ir para a página Sobre o Projeto</Link>
-    </div>
-    
-  );
+    return (
+        <Layout>
+            <Box p={4}>
+                <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+                    <Heading fontSize={'3xl'}>Pagina Inicial</Heading>
+                    <Text color={'gray.600'} fontSize={'xl'}>
+                        Este projeto é um exemplo de como usar o chrakra e aplicações.
+                    </Text>
+                </Stack>
+            </Box>
+        </Layout >
+    );
 }
+
 export default Home;

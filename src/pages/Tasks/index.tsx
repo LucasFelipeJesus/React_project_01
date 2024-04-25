@@ -1,25 +1,51 @@
-import { Link } from "react-router-dom";
+import { Stack, Container, Heading, Center, useColorModeValue, FormControl, FormLabel, HStack, Checkbox, Button, Box,Text } from "@chakra-ui/react";
+import ListTasks from "../../components/formTasks";
+import InputFatec from "../../components/inputFatec";
+import Layout from "../../components/layout/layout";
+
 
 function TarefasFatec() {
-    return (
-      <div>
-        
-            <p>Lista de Tarefas:
-                <ul>
-                <li>Criar um projeto em React com Typescript</li>
-                <li>Criar uma página de formulário</li>
-                <li>Criar uma página de tarefas</li>
-                <li>Criar uma página de sobre</li>            
-         </ul>
-            
-            </p>
-        <br />
-        <Link to="/">Ir para a página Inicial</Link>
-        <br />
-        <Link to="/FormFatec">Ir para a página de preenchimento de formulário</Link>
-        <br />
-        <Link to="/sobre">Ir para a página Sobre o Projeto</Link>
-      </div>
-    );
-  }
-  export default TarefasFatec;
+
+  const tasks = ['Tarefa 1', 'Tarefa 2', 'Tarefa 3', 'Tarefa 4', 'Tarefa 5'];
+
+  return (
+      <Layout>
+          <Box p={4}>
+              <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+                  <Heading fontSize={'3xl'}>Cadastro de Tarefas</Heading>
+                  <Text color={'gray.600'} fontSize={'xl'}>
+                      Lista de Tarefas
+                  </Text>
+                  <Center >
+                      <Box
+                          maxW={'520px'}
+                          w={'full'}
+                          bg={useColorModeValue('white', 'gray.900')}
+                          boxShadow={'2xl'}
+                          rounded={'lg'}
+                          p={6}
+                          textAlign={'center'}>
+                          <Stack spacing={4}>
+                              <FormControl id="task">
+                                  <FormLabel>Inserir nova tarefa</FormLabel>
+                                  <HStack>
+                                      <InputFatec text='Digite o título da Tarefa' defaultvalue='' type='text' />
+                                      <Checkbox>Realizada?</Checkbox>
+                                      <Button bg={'blue.400'} color={'white'} _hover={{ bg: 'blue.500', }}>
+                                          Inserir
+                                      </Button>
+                                  </HStack>
+                              </FormControl>
+                          </Stack>
+                          <Stack py={4}>
+                              <ListTasks tasks={tasks} />
+                          </Stack>
+                      </Box>
+                  </Center>
+              </Stack>
+          </Box>
+      </Layout>
+  )
+}
+
+export default TarefasFatec;
