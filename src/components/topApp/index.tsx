@@ -269,10 +269,7 @@ import {
         }*/
       ,
     },
-    {
-      label: 'Sobre',
-      href: '/sobre'
-    },
+    
       /*children: [
         {
           label: 'Ir para a página Sobre',
@@ -292,5 +289,9 @@ import {
     {
       label: 'Tarefas',
       href: '/tarefas',
+    },
+    {
+      label: 'Sobre',
+      href: '/sobre'
     },
   ];
