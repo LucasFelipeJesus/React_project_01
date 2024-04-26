@@ -3,12 +3,13 @@ import {
     Container,
     Stack,
     Text,
-    Link,
     useColorModeValue,
+    Center,
   } from '@chakra-ui/react';
   
   export default function Rodape() {
     return (
+      <Center>
       <Box
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}>
@@ -24,6 +25,7 @@ import {
           <Text>© 2024 Fatec Indaiatuba. All rights reserved</Text>
         </Container>
       </Box>
+      </Center>
     );
   }
 
