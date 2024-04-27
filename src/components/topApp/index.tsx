@@ -58,7 +58,7 @@ import {
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
               Logo
-            </Text>
+            </Text>          
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />

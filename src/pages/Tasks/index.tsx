@@ -1,12 +1,13 @@
 import { Stack, Container, Heading, Center, useColorModeValue, FormControl, FormLabel, HStack, Checkbox, Button, Box,Text } from "@chakra-ui/react";
-import ListTasks from "../../components/formTasks";
+
 import InputFatec from "../../components/input";
 import Layout from "../../components/layout/layout";
+import ItemTask from "../../components/tarefas/itemTasks";
 
 
 function TarefasFatec() {
 
-  const tasks = ['Tarefa 1', 'Tarefa 2', 'Tarefa 3', 'Tarefa 4', 'Tarefa 5'];
+  const tasks = ['Tarefa 1', 'Tarefa 2', 'Tarefa 3'];
 
   return (
       <Layout>
@@ -38,7 +39,7 @@ function TarefasFatec() {
                               </FormControl>
                           </Stack>
                           <Stack py={4}>
-                              <ListTasks tasks={tasks} />
+                             <ItemTask tasks={tasks} />
                           </Stack>
                       </Box>
                   </Center>

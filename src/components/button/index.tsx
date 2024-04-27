@@ -20,7 +20,7 @@ function ButtonForms1({label}:Props){
               bg={'red.400'}
               href={'#'}
               _hover={{
-                bg: 'pink.300',
+                bg: 'red.300',
               }}>             
             {label}
             </Button>

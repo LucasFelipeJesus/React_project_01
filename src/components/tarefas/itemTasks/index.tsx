@@ -1,11 +1,11 @@
 import { Card, HStack, CardBody,Text } from "@chakra-ui/react";
-import ButtonForms1 from "../button";
+import ButtonForms1 from "../../button";
 
 interface Props {
   tasks: string[];
 }
 
-function ListTasks({ tasks }: Props) {
+function ItemTask({ tasks }: Props) {
   return (
       <>
           {
@@ -25,4 +25,4 @@ function ListTasks({ tasks }: Props) {
   );
 }
 
-export default ListTasks;
+export default ItemTask;
