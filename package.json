@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lucasfelipejesus.github.io/React_project_01/",
+  "homepage": "https://lucasfelipejesus.github.io",
   "name": "react-project",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build",
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
